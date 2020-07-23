@@ -33,5 +33,7 @@ def scrap(chars_src, out_folder):
             if not has_data(line.strip(), out_folder):
                 request_char_data(line.strip(), out_folder)
                 print('finished ' + line.strip() + ' !')
+            else:
+                print('existed ' + line.strip() + ' !')
 
 scrap('../output1/characters.txt', '../hvdict/char_data')
